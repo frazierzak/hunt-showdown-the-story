@@ -10,7 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -32,192 +38,215 @@
       </div>
       <img class="logo" src="images/logo.png" alt="Hunt Showdown Logo" />
       <h1>Hunt: Showdown - The Story</h1>
+      <p id="intro" class="modal">
+        Below you'll find all of the collected lore and story elements of the
+        universe in <a href="https://www.huntshowdown.com/">Hunt: Showdown</a>,
+        a videogame developed and published for PC/Console by
+        <a href="https://www.crytek.com/">Crytek</a>. Since the game's 1.0
+        release in 2018, the story has slowly been revealed through in-game
+        content and events. This project is open-sourced any contribution would
+        be highly appreciated. If you want to support me feel free to
+        <a href="#">buy me a coffee!</a>
+      </p>
+      <p>
+        <a class="modal_open" href="#intro" rel="modal:open"
+          ><img src="images/info.png" alt="About"
+        /></a>
+      </p>
     </header>
+
     <div class="sidebar"></div>
-    <div class="content">
-      <section>
-        <div class="chapter_header">
-          <h2>The Prelude</h2>
-          <p class="sources">
-            Sourced from <a href="#">Hunt: Showdown Wiki</a>,
-            <a href="#">Hunt Showdown Wikipedia</a>, and in-game content from
-            Codex Imperium.
-          </p>
-        </div>
-        <div class="chapter">
-          <p>
-            <strong>It all started with <em>him</em></strong
-            >. His blackened fingers gripped the entrinched revolver from the
-            mud. Across from where? Did you enjoy your meal, Mom? You drank it
-            fast enough. I don't understand the question, and I won't respond to
-            it. There's so many poorly chosen words in that sentence. I care
-            deeply for nature.
-          </p>
-          <q>I don't understand the question, and I won't respond to it.</q>
-          <p>
-            As you may or may not know, Lindsay and I have hit a bit of a rough
-            patch. I don't criticize you!
-            <strong>
-              And if you're worried about criticism, sometimes a diet is the
-              best defense.</strong
-            >
-            <em> I'm half machine.</em> I'm a monster.
-          </p>
 
-          <p>
-            I've opened a door here that I regret. Michael! Get me a vodka
-            rocks. And a piece of toast. First place chick is hot, but has an
-            attitude, doesn't date magicians. He'll want to use your yacht, and
-            I don't want this thing smelling like fish.
-          </p>
-          <ol>
-            <li>Army had half a day.</li>
-            <li>Steve Holt!</li>
-            <li>We just call it a sausage.</li>
-          </ol>
-          <p>
-            No! I was ashamed to be SEEN with you. I like being with you. But I
-            bought a yearbook ad from you, doesn't that mean anything anymore?
-            No… but I'd like to be asked! Well, what do you expect, mother?
-          </p>
-          <ul>
-            <li>Get me a vodka rocks. And a piece of toast.</li>
-            <li>I'm a monster.</li>
-            <li>No… but I'd like to be asked!</li>
-          </ul>
-
-          <p>
-            Get me a vodka rocks. And a piece of toast. I'm afraid I just blue
-            myself. Oh, you're gonna be in a coma, all right. That's what it
-            said on 'Ask Jeeves.' Guy's a pro. Across from where?
-          </p>
-          <p>
-            I hear the jury's still out on science. No! I was ashamed to be SEEN
-            with you. I like being with you. No, I did not kill Kitty. However,
-            I am going to oblige and answer the nice officer's questions because
-            I am an honest man with no secrets to hide.
-          </p>
+    <div class="chapter">
+      <div class="chapter_header">
+        <h2>The Prelude</h2>
+        <div id="source1" class="modal">
+          Sourced from <a href="#">Hunt: Showdown Wiki</a>,
+          <a href="#">Hunt Showdown Wikipedia</a>, and in-game content from
+          Codex Imperium.
         </div>
-      </section>
-      <section>
-        <div class="chapter_header">
-          <h2>Chapter I - The Beginning</h2>
-          <p class="sources">
-            Sourced from <a href="#">Hunt: Showdown Wiki</a>,
-            <a href="#">Hunt Showdown Wikipedia</a>, and in-game content from
-            Codex Imperium.
-          </p>
-        </div>
-        <div class="chapter">
-          <p>
-            <strong>It all started with <em>him</em></strong
-            >. His blackened fingers gripped the entrinched revolver from the
-            mud. Across from where? Did you enjoy your meal, Mom? You drank it
-            fast enough. I don't understand the question, and I won't respond to
-            it. There's so many poorly chosen words in that sentence. I care
-            deeply for nature.
-          </p>
-          <q>I don't understand the question, and I won't respond to it.</q>
-          <p>
-            As you may or may not know, Lindsay and I have hit a bit of a rough
-            patch. I don't criticize you!
-            <strong>
-              And if you're worried about criticism, sometimes a diet is the
-              best defense.</strong
-            >
-            <em> I'm half machine.</em> I'm a monster.
-          </p>
+        <span
+          ><a class="modal_open" href="#source1" rel="modal:open"
+            ><img src="images/sources.png" alt="Sources" /></a
+        ></span>
+      </div>
+      <div class="chapter_content">
+        <p>
+          <img src="images/thumb.jpg" alt="Thumbnail" />
+          <strong>It all started with <em>him</em></strong
+          >. His blackened fingers gripped the entrinched revolver from the mud.
+          Across from where? Did you enjoy your meal, Mom? You drank it fast
+          enough. I don't understand the question, and I won't respond to it.
+          There's so many poorly chosen words in that sentence. I care deeply
+          for nature.
+        </p>
+        <q>I don't understand the question, and I won't respond to it.</q>
+        <p>
+          As you may or may not know, Lindsay and I have hit a bit of a rough
+          patch. I don't criticize you!
+          <strong>
+            And if you're worried about criticism, sometimes a diet is the best
+            defense.</strong
+          >
+          <em> I'm half machine.</em> I'm a monster.
+        </p>
 
-          <p>
-            I've opened a door here that I regret. Michael! Get me a vodka
-            rocks. And a piece of toast. First place chick is hot, but has an
-            attitude, doesn't date magicians. He'll want to use your yacht, and
-            I don't want this thing smelling like fish.
-          </p>
-          <ol>
-            <li>Army had half a day.</li>
-            <li>Steve Holt!</li>
-            <li>We just call it a sausage.</li>
-          </ol>
-          <p>
-            No! I was ashamed to be SEEN with you. I like being with you. But I
-            bought a yearbook ad from you, doesn't that mean anything anymore?
-            No… but I'd like to be asked! Well, what do you expect, mother?
-          </p>
-          <ul>
-            <li>Get me a vodka rocks. And a piece of toast.</li>
-            <li>I'm a monster.</li>
-            <li>No… but I'd like to be asked!</li>
-          </ul>
+        <p>
+          I've opened a door here that I regret. Michael! Get me a vodka rocks.
+          And a piece of toast. First place chick is hot, but has an attitude,
+          doesn't date magicians. He'll want to use your yacht, and I don't want
+          this thing smelling like fish.
+        </p>
+        <ol>
+          <li>Army had half a day.</li>
+          <li>Steve Holt!</li>
+          <li>We just call it a sausage.</li>
+        </ol>
+        <p>
+          No! I was ashamed to be SEEN with you. I like being with you. But I
+          bought a yearbook ad from you, doesn't that mean anything anymore? No…
+          but I'd like to be asked! Well, what do you expect, mother?
+        </p>
+        <ul>
+          <li>Get me a vodka rocks. And a piece of toast.</li>
+          <li>I'm a monster.</li>
+          <li>No… but I'd like to be asked!</li>
+        </ul>
 
-          <p>
-            Get me a vodka rocks. And a piece of toast. I'm afraid I just blue
-            myself. Oh, you're gonna be in a coma, all right. That's what it
-            said on 'Ask Jeeves.' Guy's a pro. Across from where?
-          </p>
-          <p>
-            I hear the jury's still out on science. No! I was ashamed to be SEEN
-            with you. I like being with you. No, I did not kill Kitty. However,
-            I am going to oblige and answer the nice officer's questions because
-            I am an honest man with no secrets to hide.
-          </p>
-          <p>
-            But I bought a yearbook ad from you, doesn't that mean anything
-            anymore? Not tricks, Michael, illusions. Michael! He'll want to use
-            your yacht, and I don't want this thing smelling like fish. Whoa,
-            this guy's straight?
-          </p>
-          <p>
-            I'm half machine. I'm a monster. Well, what do you expect, mother?
-            I'm afraid I just blue myself. We just call it a sausage. Whoa, this
-            guy's straight? That's why you always leave a note!
-          </p>
-          <p>
-            That's what it said on 'Ask Jeeves.' Well, what do you expect,
-            mother? Army had half a day. He'll want to use your yacht, and I
-            don't want this thing smelling like fish. I don't criticize you! And
-            if you're worried about criticism, sometimes a diet is the best
-            defense.
-          </p>
-          <p>
-            It's called 'taking advantage.' It's what gets you ahead in life.
-            Across from where? I don't criticize you! And if you're worried
-            about criticism, sometimes a diet is the best defense. Say goodbye
-            to these, because it's the last time!
-          </p>
-          <p>
-            It's called 'taking advantage.' It's what gets you ahead in life. I
-            don't criticize you! And if you're worried about criticism,
-            sometimes a diet is the best defense. There's only one man I've ever
-            called a coward, and that's Brian Doyle Murray. No, what I'm calling
-            you is a television actor.
-          </p>
-          <p>
-            I've opened a door here that I regret. I care deeply for nature.
-            Marry me. I don't criticize you! And if you're worried about
-            criticism, sometimes a diet is the best defense. No, I did not kill
-            Kitty. However, I am going to oblige and answer the nice officer's
-            questions because I am an honest man with no secrets to hide.
-          </p>
-          <p>
-            No… but I'd like to be asked! I'm afraid I just blue myself. I've
-            opened a door here that I regret. Bad news. Andy Griffith turned us
-            down. He didn't like his trailer.
-          </p>
-          <p>
-            Get me a vodka rocks. And a piece of toast. He'll want to use your
-            yacht, and I don't want this thing smelling like fish. I care deeply
-            for nature. It's called 'taking advantage.' It's what gets you ahead
-            in life.
-          </p>
-          <p>
-            Well, what do you expect, mother? Bad news. Andy Griffith turned us
-            down. He didn't like his trailer. Get me a vodka rocks. And a piece
-            of toast. There's only one man I've ever called a coward, and that's
-            Brian Doyle Murray. No, what I'm calling you is a television actor.
-          </p>
+        <p>
+          Get me a vodka rocks. And a piece of toast. I'm afraid I just blue
+          myself. Oh, you're gonna be in a coma, all right. That's what it said
+          on 'Ask Jeeves.' Guy's a pro. Across from where?
+        </p>
+        <p>
+          I hear the jury's still out on science. No! I was ashamed to be SEEN
+          with you. I like being with you. No, I did not kill Kitty. However, I
+          am going to oblige and answer the nice officer's questions because I
+          am an honest man with no secrets to hide.
+        </p>
+      </div>
+    </div>
+    <div class="chapter">
+      <div class="chapter_header">
+        <h2>Chapter I - The Beginnings</h2>
+        <div id="source2" class="modal">
+          Sourced from <a href="#">Hunt: Showdown Wiki</a>,
+          <a href="#">Hunt Showdown Wikipedia</a>, and in-game content from
+          Codex Imperium.
         </div>
-      </section>
+        <span
+          ><a class="modal_open" href="#source2" rel="modal:open"
+            ><img src="images/sources.png" alt="Sources" /></a
+        ></span>
+      </div>
+      <div class="chapter_content">
+        <p>
+          <strong>It all started with <em>him</em></strong
+          >. His blackened fingers gripped the entrinched revolver from the mud.
+          Across from where? Did you enjoy your meal, Mom? You drank it fast
+          enough. I don't understand the question, and I won't respond to it.
+          There's so many poorly chosen words in that sentence. I care deeply
+          for nature.
+        </p>
+        <q>I don't understand the question, and I won't respond to it.</q>
+        <p>
+          As you may or may not know, Lindsay and I have hit a bit of a rough
+          patch. I don't criticize you!
+          <strong>
+            And if you're worried about criticism, sometimes a diet is the best
+            defense.</strong
+          >
+          <em> I'm half machine.</em> I'm a monster.
+        </p>
+
+        <p>
+          I've opened a door here that I regret. Michael! Get me a vodka rocks.
+          And a piece of toast. First place chick is hot, but has an attitude,
+          doesn't date magicians. He'll want to use your yacht, and I don't want
+          this thing smelling like fish.
+        </p>
+        <ol>
+          <li>Army had half a day.</li>
+          <li>Steve Holt!</li>
+          <li>We just call it a sausage.</li>
+        </ol>
+        <p>
+          No! I was ashamed to be SEEN with you. I like being with you. But I
+          bought a yearbook ad from you, doesn't that mean anything anymore? No…
+          but I'd like to be asked! Well, what do you expect, mother?
+        </p>
+        <ul>
+          <li>Get me a vodka rocks. And a piece of toast.</li>
+          <li>I'm a monster.</li>
+          <li>No… but I'd like to be asked!</li>
+        </ul>
+
+        <p>
+          Get me a vodka rocks. And a piece of toast. I'm afraid I just blue
+          myself. Oh, you're gonna be in a coma, all right. That's what it said
+          on 'Ask Jeeves.' Guy's a pro. Across from where?
+        </p>
+        <p>
+          I hear the jury's still out on science. No! I was ashamed to be SEEN
+          with you. I like being with you. No, I did not kill Kitty. However, I
+          am going to oblige and answer the nice officer's questions because I
+          am an honest man with no secrets to hide.
+        </p>
+        <p>
+          But I bought a yearbook ad from you, doesn't that mean anything
+          anymore? Not tricks, Michael, illusions. Michael! He'll want to use
+          your yacht, and I don't want this thing smelling like fish. Whoa, this
+          guy's straight?
+        </p>
+        <p>
+          I'm half machine. I'm a monster. Well, what do you expect, mother? I'm
+          afraid I just blue myself. We just call it a sausage. Whoa, this guy's
+          straight? That's why you always leave a note!
+        </p>
+        <p>
+          That's what it said on 'Ask Jeeves.' Well, what do you expect, mother?
+          Army had half a day. He'll want to use your yacht, and I don't want
+          this thing smelling like fish. I don't criticize you! And if you're
+          worried about criticism, sometimes a diet is the best defense.
+        </p>
+        <p>
+          It's called 'taking advantage.' It's what gets you ahead in life.
+          Across from where? I don't criticize you! And if you're worried about
+          criticism, sometimes a diet is the best defense. Say goodbye to these,
+          because it's the last time!
+        </p>
+        <p>
+          It's called 'taking advantage.' It's what gets you ahead in life. I
+          don't criticize you! And if you're worried about criticism, sometimes
+          a diet is the best defense. There's only one man I've ever called a
+          coward, and that's Brian Doyle Murray. No, what I'm calling you is a
+          television actor.
+        </p>
+        <p>
+          I've opened a door here that I regret. I care deeply for nature. Marry
+          me. I don't criticize you! And if you're worried about criticism,
+          sometimes a diet is the best defense. No, I did not kill Kitty.
+          However, I am going to oblige and answer the nice officer's questions
+          because I am an honest man with no secrets to hide.
+        </p>
+        <p>
+          No… but I'd like to be asked! I'm afraid I just blue myself. I've
+          opened a door here that I regret. Bad news. Andy Griffith turned us
+          down. He didn't like his trailer.
+        </p>
+        <p>
+          Get me a vodka rocks. And a piece of toast. He'll want to use your
+          yacht, and I don't want this thing smelling like fish. I care deeply
+          for nature. It's called 'taking advantage.' It's what gets you ahead
+          in life.
+        </p>
+        <p>
+          Well, what do you expect, mother? Bad news. Andy Griffith turned us
+          down. He didn't like his trailer. Get me a vodka rocks. And a piece of
+          toast. There's only one man I've ever called a coward, and that's
+          Brian Doyle Murray. No, what I'm calling you is a television actor.
+        </p>
+      </div>
     </div>
   </body>
 </html>
