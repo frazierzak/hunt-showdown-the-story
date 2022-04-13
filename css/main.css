@@ -23,15 +23,15 @@ h2 {
 
 h1 {
   text-transform: uppercase;
-  line-height: 2em;
   font-size: 42px;
+  margin-bottom: 1em;
 }
 
 h2 {
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 1em;
-  margin: 0 0 0 0;
+  margin-bottom: 0.3em;
   font-size: 36px;
 }
 
@@ -79,7 +79,7 @@ section {
   display: flex;
   margin: 0 20px;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 section h2,
@@ -90,19 +90,56 @@ section .sources {
 .chapter_header p.sources {
   font-style: italic;
   color: #909090;
-  margin-bottom: 0;
+  margin-bottom: 2em;
   text-indent: 0;
 }
 
 .chapter p {
-  line-height: 1.4em;
+  line-height: 1.3em;
   letter-spacing: 1px;
-  text-indent: 30px;
-  font-size: 20px;
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
-.chapter p::first-letter {
+.chapter p:first-of-type {
+  text-indent: 30px;
+}
+
+.chapter p:first-of-type::first-letter {
   font-size: 200%;
+}
+
+.chapter q {
+  display: block;
+  font-style: italic;
+  font-size: 2em;
+  margin: 1em 0 1em 0;
+  /* text-indent: 20px; */
+  font-weight: 400;
+  text-align: center;
+  color: #909090;
+}
+
+.chapter ol,
+.chapter ul {
+  max-width: 800px;
+  margin: 0 0 1em 1em;
+}
+
+.chapter li {
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.chapter ol li {
+  list-style: lower-roman;
+  list-style-position: inside;
+}
+
+.chapter ul li {
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 @media (min-width: 600px) {
@@ -115,7 +152,31 @@ section .sources {
     border: none;
     flex-direction: column;
     justify-content: center;
-    margin: 0 0 0 0;
+    margin: 0;
+  }
+  header.desktop .buttons {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    /* margin: 10px 0 0 0; */
+    position: fixed;
+    top: 0;
+  }
+  .button_container {
+    padding: 7px 15px 7px 0;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .buttons a {
+    margin: 0 0 0 20px;
+    opacity: 0.8;
+  }
+  .buttons a:hover {
+    opacity: 1;
+  }
+  .buttons img {
+    max-height: 35px;
+    width: auto;
   }
   header.desktop h1 {
     text-align: center;
