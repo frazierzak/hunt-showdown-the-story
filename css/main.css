@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #b53536;
+  color: #e45f60;
 }
 
 a:hover {
@@ -66,9 +66,34 @@ em {
   letter-spacing: 1px;
   font-size: 1.2em;
   font-style: italic;
-  color: #909090;
+  color: #ddd;
   background-color: #1c1c1c;
-  padding: 1em;
+  border: 1px solid #f5dea7;
+  border-radius: 0;
+  padding: 0.8em;
+}
+
+.modal p {
+  margin: 0 0 1em 0;
+}
+
+.modal p:last-of-type {
+  margin: 0;
+}
+
+.modal_close {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.modal_close:hover {
+  opacity: 1;
+}
+
+.modal_close img {
+  max-height: 25px;
 }
 
 header {
