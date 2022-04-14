@@ -156,8 +156,7 @@ header.desktop {
   margin: 0 auto 2em auto;
   width: 100%;
   max-width: 750px;
-  padding: 0 20px;
-  box-sizing: border-box;
+  padding: 0 10px;
 }
 
 .chapter_navigation a {
@@ -171,7 +170,6 @@ header.desktop {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  box-sizing: border-box;
   opacity: 0.8;
 }
 
@@ -218,7 +216,7 @@ header.desktop {
   flex-direction: column;
   margin: 0 auto 1em;
   max-width: 750px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .chapter_header {
@@ -333,6 +331,12 @@ header.desktop {
   }
   .logo {
     max-height: 175px;
+  }
+  .chapter_navigation {
+    padding: 0 20px;
+  }
+  .chapter {
+    padding: 0 20px;
   }
   .chapter_content img {
     width: initial;
