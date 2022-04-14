@@ -8,6 +8,8 @@ $(document).ready(function () {
     function () {},
     function () {
       $('#chapter_selection').removeClass('show')
+      $('.down_arrow').hide()
+      $('.up_arrow').show()
     }
   )
 })

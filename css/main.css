@@ -39,7 +39,6 @@ h2 {
 
 strong {
   font-weight: 700;
-  display: inline-block;
 }
 
 em {
@@ -101,8 +100,8 @@ header {
   align-items: center;
   background: linear-gradient(#010101, #1c1c1c);
   padding: 10px 20px;
-  margin: 0 0 1em 0;
-  border-bottom: 1px solid #010101;
+  margin: 0 0 2em 0;
+  border-bottom: 1px solid #555555;
 }
 
 header.desktop {
@@ -157,6 +156,8 @@ header.desktop {
   margin: 0 auto 2em auto;
   width: 100%;
   max-width: 750px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .chapter_navigation a {
@@ -251,10 +252,6 @@ header.desktop {
 .chapter_content img {
   width: 100%;
   margin: 0 0 1em 0;
-}
-
-.chapter_content p:first-of-type {
-  text-indent: 10px;
 }
 
 .chapter_content p:first-of-type strong::first-letter {
