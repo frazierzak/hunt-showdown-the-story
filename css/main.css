@@ -69,7 +69,7 @@ em {
   color: #ddd;
   background-color: #1c1c1c;
   border: 1px solid #f5dea7;
-  border-radius: 0;
+  border-radius: 2px;
   padding: 0.8em;
 }
 
@@ -150,6 +150,68 @@ header.desktop {
   opacity: 1;
 }
 
+.chapter_navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 2em auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.chapter_navigation a {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.2em;
+  border: 1px solid #555555;
+  background: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+.chapter_navigation a:hover {
+  opacity: 1;
+}
+
+.chapter_navigation a img {
+  max-height: 15px;
+  margin: 0 0.5em 0 0;
+}
+
+.chapter_navigation a img.down_arrow,
+.chapter_navigation a img.up_arrow {
+  max-width: 15px;
+  margin: 0 0 0 auto;
+}
+
+#chapter_selection {
+  display: none;
+  border-bottom: 1px solid #555555;
+}
+
+#chapter_selection.show {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#chapter_selection li a {
+  padding: 0.5em;
+  margin: 0;
+  opacity: 0.8;
+  border-top: none;
+  border-bottom: none;
+}
+
+#chapter_selection li a:hover {
+  opacity: 1;
+}
+
 .chapter {
   display: flex;
   flex-direction: column;
@@ -161,10 +223,10 @@ header.desktop {
 .chapter_header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   border-bottom: 2px solid #f5f5f5;
   padding: 0 0 0.5em 0;
-  margin: 0 0 1em 0;
+  margin: 0 0 2em 0;
 }
 
 .chapter_header h2 {
@@ -192,11 +254,12 @@ header.desktop {
 }
 
 .chapter_content p:first-of-type {
-  /* text-indent: 10px; */
+  text-indent: 10px;
 }
 
 .chapter_content p:first-of-type strong::first-letter {
-  font-size: 200%;
+  font-size: 300%;
+  color: #e45f60;
 }
 
 .chapter_content q {
@@ -207,7 +270,7 @@ header.desktop {
   font-weight: 400;
   text-align: left;
   line-height: 1.2em;
-  color: #909090;
+  color: #f5dea7;
 }
 
 .chapter_content ol,
@@ -242,7 +305,7 @@ header.desktop {
     border: none;
     flex-direction: column;
     justify-content: center;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
   }
   header.desktop .buttons {
     display: flex;
@@ -269,7 +332,7 @@ header.desktop {
   }
   header.desktop h1 {
     text-align: center;
-    line-height: 1em;
+    line-height: 2em;
   }
   .logo {
     max-height: 175px;
